@@ -1,0 +1,52 @@
+.thumbnail {width: 100%; border-radius: 10px;}
+/* Images will alawyas keep it's original size, so for it to fit itno it's grid we set it to 100% */
+
+.video-info-grid {display: grid; grid-template-columns: 50px 1fr;}
+
+.video-grid {display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 16px; row-gap: 40px;}
+/* problem with using inline-block is that it has allingment issues, if there are spaces between divs, it'll take up space on webpage, anothe issue is that it is not vertically alligned. CSS grid helps us create perfectly alligned horizontal layoutS */
+
+/* Inheritance mostly works with text properties like text-underline, it doesn;t affect things like margin, border or padding */
+
+.profile-picture {width:36px; border-radius: 50px;}
+
+.video-title {margin-top: 0; font-size: 14px; font-weight: 500; line-height:20px; margin-bottom: 10px;}
+
+.video-author, .video-stats {font-size: 12px; color: rgb(96, 96, 96);}
+
+.video-author {margin-bottom: 4px;}
+
+.thumbnail-row {margin-bottom: 8px; position: relative;}
+/* .thumbnail {width: 300px; height: 300px; object-fit: contain; object-position: bottom;} */
+
+/* If you set the width, the height also adjusts so that it can maintain the correct dimensions(shape). 
+If you want a specific height and width, the image may become distorted trying to fit this. We can combat this by using object-fit: to contain the whole image(will keep the width and height in a box, but image may shrink down to keep dimensions) or cover a part of the image. Object-position: which part you want to show if you are using the cover attribute or where you want it if using teh contain.
+     */
+
+
+/* Nested layout technique: Helps you break down designs into a combination of vertical and horizontal layout */
+
+
+.video-time {
+     background-color: black; color: white; position: absolute; bottom: 8px; right: 5px; font-size: 12px; font-weight: 500px; padding: 4px; padding-bottom: 4px; border-radius: 2px;
+}
+/* padding - first value is for vertical so top and bottom, second value is for left and right, only one value is for left, right, top and bottom
+can also have 4 so first is top, second is right, third is botom, fourth is left, start from top and work clockwise. Margin works the same way.*/
+
+@media (max-width: 750px) {
+     .video-grid {
+          grid-template-columns: 1fr;
+     }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+     .video-grid {
+          grid-template-columns: 1fr 1fr;
+     }
+}
+
+@media (min-width: 1000px) {
+     .video-grid {
+          grid-template-columns: 1fr 1fr 1fr;
+     }
+}

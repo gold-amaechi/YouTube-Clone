@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My first project</title>
+  <link rel="icon" href="/Portfolio/favicon6.png" type="image/x-icon">
+  <link rel="stylesheet" href="/YouTube/styles/general.css">
+  <link rel="stylesheet" href="/YouTube/styles/header.css">
+  <link rel="stylesheet" href="/YouTube/styles/sidebar.css">
+  <link rel="stylesheet" href="/YouTube/styles/video.css">
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <header class="header">
+    <div class="left-section"> 
+      <img class="hamburger-menu" src="/YouTube/image/hamburger-menu.svg" alt="Hamburger menu">
+
+      <img class="YouTube-logo" src="/YouTube/image/youtube-logo.svg" alt="YouTube logo">
+    </div>
+
+    <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+
+        <button class = "search-button">
+         <img class="search-icon" src="/YouTube/image/search.svg" alt="search icon">
+         <div class="tooltip">Search</div>
+        </button>
+
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="/YouTube/image/voice-search-icon.svg" alt="voice-search icon">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+    </div>
+
+    <div class="right-section">
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="/YouTube/image/upload.svg" alt="video upload icon">
+        <div class="tooltip">Create</div>
+      </div>
+
+      <div class="YouTube-apps-icon-container">
+        <img class="YouTube-apps-icon" src="/YouTube/image/youtube-apps.svg" alt="YouTube apps icon">
+        <div class="tooltip">YouTube apps</div>
+      </div>
+
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="/YouTube/image/notifications.svg" alt="notification icon">
+        <div class="tooltip">Notifications</div>
+        <div class="notifications-count">3</div>
+      </div>
+      <img class="my-profile-picture" src="/YouTube/image/profile.jpg" alt="profile picture of cartoon woman standing, holding a laptop with the right hand and waving with the left hand">
+    </div>
+  </header>
+
+ <nav class="sidebar">
+  <div class="sidebar-link">
+    <img src="/YouTube/image/home.svg" alt="YouTube Home icon">
+    <div>Home</div>
+  </div>
+  <div class="sidebar-link">
+    <img src="/YouTube/image/explore.svg" alt=" YouTube Explore icon">
+    <div>Explore</div>
+  </div>
+  <div class="sidebar-link"><img src="/YouTube/image/subscriptions.svg" alt="YouTube Subscriptions icon">
+  <div>Subscription</div></div>
+  <div class="sidebar-link"><img src="/YouTube/image/originals.svg" alt="YouTube Originals icon">
+  <div>Originals</div></div>
+  <div class="sidebar-link"><img src="/YouTube/image/youtube-music.svg" alt="YouTube Music icon">
+  <div>YouTube Music</div></div>
+  <div class="sidebar-link"><img src="/YouTube/image/library.svg" alt="YouTube Library icon">
+  <div>Library</div></div>
+  </nav>
+ 
+  <!-- can input text to give a searchbox or checkbox for ticks-->
+
+  <!-- 3 types of HTML elements. inline elements (not inline block elements) appear within a line of text, like strong. -->
+
+  <!-- can use display property to switch between block and inline block -->
+  <main>
+    <section class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row"><img class="thumbnail" src="/YouTube/image/hello.webp" alt="thumbnail of woman with headphones, holding a pen, sitting at a desk with books and a basket of pencils, facing forward and waving hello.">
+          <div class="video-time"> 14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="/YouTube/image/profile4.jpg" alt="profile picture of cartoon girl leaning on a stack of books">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Hi, my name is Gold. <br>Welcome to MeTube! A short glimpse into my life.
+            </p>
+            <p class="video-author">
+              Gold Amaechi
+            </p>
+            <p class="video-stats">
+              3.4M views &#183 6 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+      
+        
+          <!-- div stands for division, it is a block element, essentially a box. Can contain other elements, like paragraph, images, as well as other divs. Container that allow us group elements together and lay them out on a page, in order to build complex real world webpages. 
+          If a block element is in a div, it'll take up the entire line in the contianer, rather than on the page.-->
+      
+          <div class="video-preview">
+            <div class="thumbnail-row"><img class="thumbnail" src="/YouTube/image/bootcamp.avif" alt="thumbnail of coding bootcamp, 4 people coding on a laptop.">
+              <div class="video-time"> 20:16</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="/YouTube/image/profile2.jpg" alt="profile of cartoon girl sitting with a laptop on her laps.">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  I completed a 12 week Skills Bootcamp in Software Development.
+                </p>
+                <p class="video-author">
+                  JUST IT
+                </p>
+                <p class="video-stats">
+                  12.9M views &#183 12 weeks ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-preview">
+            <div class="thumbnail-row"><img class="thumbnail" src="/YouTube/image/puzzle.avif" alt="thumbnail of Software Development codes on a screen">
+              <div class="video-time"> 01:01</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="/YouTube/image/profile3.jpg" alt="profile of cartoon girl sitting on the floor reading a book, with a stack of books in the background.">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  I love to code! <br>I like solving challenges and building projects.
+                </p>
+                <p class="video-author">
+                  Puzzle master
+                </p>
+                <p class="video-stats">
+                  10K views &#183 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-preview">
+            <div class="thumbnail-row"><img class="thumbnail" src="/YouTube/image/movies.avif" alt="thumbnail of spider man outside, perched on a stone window reading a book.">
+              <div class="video-time"> 02:30:16</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="/YouTube/image/profile.jpg" alt="profile picture of cartoon woman standing, holding a laptop with the right hand and waving with the left hand">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  I love movies, I'm a big fan of the Marvel Cinematic Universe. Iron Man is my all time favourite.
+                </p>
+                <p class="video-author">
+                  Ms. Marvel 
+                </p>
+                <p class="video-stats">
+                  123M views &#183 29 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-preview">
+            <div class="thumbnail-row"><img class="thumbnail" src="/YouTube/image/travel.avif" alt="thumbnail of girl standing on steps in the great outdoors, she is facing a scenery of trees and mountains">
+              <div class="video-time"> 55:00</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="/YouTube/image/profile3.jpg" alt="profile of cartoon girl sitting on the floor reading a book, with a stack of books in the background.">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  I love to travel, enjoying new places and learning about it's history.
+                </p>
+                <p class="video-author">
+                  Explorer Extraodinaire
+                </p>
+                <p class="video-stats">
+                  12.9M views &#183 5 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-preview">
+            <div class="thumbnail-row"><img class="thumbnail" src="/YouTube/image/food.avif" alt="thumbnail of lots of food on a table; chips, onion rings, drinks. Pair of four hands holding half eaten food.">
+              <div class="video-time"> 30:45</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="/YouTube/image/profile2.jpg" alt="profile of cartoon girl sitting with a laptop on her laps.">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  I love food, I love discovering nice places for brunch, afternoon tea or dinner.
+                </p>
+                <p class="video-author">
+                  Feed Me
+                </p>
+                <p class="video-stats">
+                  12.9M views &#183 12 weeks ago
+                </p>
+              </div>
+            </div>
+          </div>
+      </section>
+  </main>
+  
+</body>
+</html>
